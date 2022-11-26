@@ -1,0 +1,178 @@
+* {
+  padding: o;
+  margin: o;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bc-header: hsl(218, 17%, 62%);
+  --bc-title: hsl(275, 18%, 79%);
+
+  --ff-title: "Staatliches", cursive;
+  --ff-text: "Palanquin", sans-serif;
+}
+
+body {
+  align-items: center;
+  padding: 0 auto;
+  margin: 0;
+  width: 100vw;
+}
+
+.page {
+  width: 38.4rem;
+  max-height: auto;
+
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  /*border: solid red 2px;
+*/
+  width: 100%;
+  height: 27.9rem;
+
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+header img {
+  width: 13.7rem;
+  height: 13.7rem;
+  margin-top: 3.2rem;
+}
+
+header h1 {
+  background-color: var(--bc-title);
+  font-family: var(--ff-title);
+  color: white;
+
+  font-size: 4rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  height: 4.9rem;
+  letter-spacing: 0.05rem;
+
+  position: absolute;
+  left: 0;
+
+  width: 100vw;
+  padding: 8px;
+  margin-top: 3.2rem;
+
+align-items: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*border: solid red 2px;
+*/
+
+  background-color: var(--bc-header);
+
+  width: 100vmax;
+  height: 27.9rem;
+  z-index: -1;
+}
+
+p {
+  font-family: var(--ff-text);
+  color: var(--bc-header);
+
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+
+align-items: center;
+text-align: center;
+
+  letter-spacing: 0;
+
+  margin: 1.4rem 4.3rem 5.9rem 3.6rem;
+
+  max-width: 100%;
+  height: 7.9rem;
+
+/*
+  border: 2px green solid; */
+}
+
+main {
+  display: grid;
+  gap: 3.6rem;
+  padding-bottom: 6rem;
+}
+
+
+main .card {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  animation: downtop 700ms 300ms;
+  transition: transform 300ms;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+
+main h2 {
+  position: absolute;
+  top: 1px;
+  right: 16px;
+  border-radius: 20px;
+
+  background-color: white;
+
+  padding: 1px 23px 0;
+
+  height: 3.5rem;
+
+  font-family: var(--ff-title);
+  color: var(--bc-header);
+
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+
+  animation: topdown 900ms 500ms;
+}
+
+@keyframes topdown {
+0% {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+100% {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+   
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
