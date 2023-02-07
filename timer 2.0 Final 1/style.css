@@ -1,0 +1,114 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: grid;
+    height: 100vh;
+}
+
+main {
+    background-color: #ffff;
+    width: 128rem;
+    height: 72rem;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+}
+
+.box {
+    height: 33.6rem;
+    width: 82.1rem;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    position: relative;
+
+}
+
+.box-timer {
+    align-items: center;
+    margin: auto 0;
+    height: 21.3rem;
+    width: 32.1rem;
+    display: grid;
+}
+
+.timer {
+    width: max-content;
+}
+
+.timer span {
+    font-size: 12.6rem;
+    font-family: "roboto";
+
+}
+
+
+.box-timer .controls {
+    margin-top: 0.3rem;
+    width: max-content;
+
+}
+
+
+.box-timer .controls button+button+button {
+    margin-left: 4rem;
+}
+
+
+.box-timer .controls button {
+    background-color: #ffff;
+    width: 4.8rem;
+    height: 4.8rem;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.box-sounds {
+    height: 33.6rem;
+    width: 30.8rem;
+    position: absolute;
+    right: 0%;
+
+}
+
+.box-sounds-col {
+    display: grid;
+    gap: 3.2rem;
+}
+
+.box-sounds .box-sounds-col-1 {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.box-sounds .box-sounds-col-2 {
+    display: flex;
+    gap: 3.2rem;
+}
+
+
+.box-sounds button {
+    background-color: white;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.box-sounds button :hover,
+.box-timer .controls button :hover {
+    transform: scale(1.2);
+    transition: 300ms;
+    list-style: none;
+}
