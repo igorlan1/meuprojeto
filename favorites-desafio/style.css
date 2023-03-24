@@ -1,0 +1,169 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+body * {
+    font-size: 2rem;
+    color: white;
+
+}
+
+
+body {
+    background-color: #000000;
+
+}
+
+#app {
+    margin: 11.5rem 16rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.7rem;
+}
+
+
+header input {
+    width: 46.2rem;
+    height: 4.8rem;
+    background-color: #06181C;
+    font-size: 1.6rem;
+    padding-left: 1.6rem;
+    border-radius: 5px;
+
+}
+
+header button {
+    height: 4.8rem;
+    width: 17rem;
+    background-color: #065E7C;
+    color: white;
+    align-items: center;
+    padding: 12px 32px;
+    display: flex;
+    font-size: 1.4rem;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+header button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
+
+.search {
+    display: flex;
+    gap: 8px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #4A808C;
+    border-radius: 30px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #06181C;
+
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #023f4d;
+}
+
+
+table th {
+    padding: 16px 0 16px 40px;
+    font-weight: 700;
+}
+
+table td {
+    padding: 24px 0 24px 40px;
+}
+
+
+
+table thead {
+    background: #092D38;
+
+}
+
+tbody td.user {
+    align-items: center;
+    display: flex;
+    gap: 1.6rem;
+}
+
+
+tbody img {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+table .remove {
+    color: red;
+    cursor: pointer;
+}
+
+table .remove:hover {
+    transform: scale(1.1);
+}
+
+tfoot tr {
+    width: max-content;
+    height: 62.4rem;
+
+}
+
+tfoot tr td {
+    align-items: center;
+    text-align: center;
+
+}
+
+tfoot tr td img {
+    height: 13.2rem;
+    width: 12.5rem;
+    margin-right: 6rem;
+}
+
+tfoot tr td span {
+    font-size: 4rem;
+    position: relative;
+    top: -40px;
+    color: #4E5455;
+}
+
+.no-user{
+    display: none;
+    }

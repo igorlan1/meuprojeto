@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <img src="./image/gitfav.svg" alt="" srcset="">
+
+            <div class="search">
+                <label class="sr-only" for="input-search"> digite o github username que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="digite o github username que quer favoritar">
+                <button> <img src="./image/little-star.svg" alt="pequena estrela"> FAVORITAR </button>
+
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>usuário</th>
+                    <th>repositories</th>
+                    <th>followers</th>
+                    <th>ação</th>
+                </tr>
+            </thead>
+            <tbody class="have-users">
+                
+              
+            </tbody>
+            <tfoot class="no-user">
+                <tr>
+                    <td colspan="4">
+                        <img src="./image/big-star.svg" alt="" srcset="">
+                        <span>
+                            nenhum favorito ainda
+
+                        </span>
+                    </td>
+
+                </tr>
+
+
+            </tfoot>
+
+        </table>
+
+
+    </div>
+</body>
+
+</html>
